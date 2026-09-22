@@ -1,1 +1,29 @@
-<p>Test application 01 </p>
+<div>
+  <h1>Home - Teste Application</h1>
+  <p>Test application 01 {{ num }}</p>
+  <hr><br>
+
+  <button [attr.aria-label]="num"> Selecionar Atributo Dinâmico </button>
+  <p> botão teste atributo dinâmico sem retorno </p>
+  <hr>  <br>
+
+  <button (click)="submit()">Clique para testar - event binding Angular</button>
+  <p> botão teste injeção de método como função - retorno via log do console </p>
+  <hr>  <br>
+
+  <button (click)="submiteve($event)">Clique para enviar parâmetros - event binding Angular</button>
+  <p> botão teste disparo de enveto html que gera objeto com informações  - retorno via log do console </p>
+  <hr>  <br>
+
+    <p> validação estrutura condicional angular </p>
+    @if (mostrarteste) {
+        <h2>Verdadeiro - Teste de estrutura condicional Angular</h2>
+    }@else if (num == "2026") {
+        <h3>Validação Else IF - número do teste confere com a condição: {{ num }}</h3>
+    } 
+    @else {
+        <h3>Falso - Teste de estrutura condicional Angular </h3>
+    }
+
+
+</div>
