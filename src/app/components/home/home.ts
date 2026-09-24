@@ -11,6 +11,8 @@ export class Home {
   num = "2026";
   idButton = "ntw";
   mostrarteste = false;
+  autor = "ThranduilSDR";
+  finalidade = "Validação Conceitos Iniciais Angular ";
 
   atualizarTstBooleano(valor: boolean) 
   {
