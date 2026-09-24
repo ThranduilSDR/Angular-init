@@ -202,6 +202,19 @@
     @else {
         <h3>Falso - Teste de estrutura condicional Angular </h3>
     }
+
+    <hr>  <br>
+    <p> validação estrutura de repetição angular </p>
+    @for (item of listItens; track item) {
+        <p>Item: {{ item }}</p>
+    }
+    <hr>  <br>
+
+    <p> validação estrutura de repetição angular com array de objetos </p>
+    @for (item of listitensid; track item.id) {
+        <p>Item ID: {{ item.id }} - Item Nome: {{ item.nome }}</p>
+    }
+
     </div>
 
     
@@ -260,7 +273,7 @@
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
-      <div class="pill-group">
+      <div class="pill-group"> 
         @for (item of [
           { title: 'Explore the Docs', link: 'https://angular.dev' },
           { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
