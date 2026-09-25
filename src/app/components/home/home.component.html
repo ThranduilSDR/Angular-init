@@ -216,15 +216,28 @@
     }
     <hr>  <br>
 
-    <p> teste de envio de informações para o backend via injeção de dependência Service Angular </p>
-      <div class="container-texto">
+    <div class="container-texto">
+        <p> teste de envio de informações para o backend via injeção de dependência Service Angular </p>
+
         <button (click)="submitForm()";>Enviar Formulário Backend</button>
         <p> Retorno via Console </p>
       </div>
     </div>
 
+    <hr>  <br>
+    <h3>Teste de passagem de input para componente filho</h3>
+    <p>Valor recebido: {{ test }}</p>
     
-</div>
+    <br>
+    <p> teste 2</p>
+    <div class="container-texto">
+
+
+        <button (click)="submitoutput()";>Executar test output</button>
+        <p> Retorno via Console </p>
+      </div>
+    </div>
+
 
 <main class="main">
   <div class="content">
