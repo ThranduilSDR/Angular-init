@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { EnviaformularioService } from '../../services/enviaformulario.service';
 
 @Component({
   imports: [],
   selector: 'app-home',
-  styleUrl: './home.css',
-  templateUrl: './home.html',
+  styleUrl: './home.component.css',
+  templateUrl: './home.component.html',
 })
 export class Home {
+  private enviarFormulariosService = inject(EnviaformularioService);
   tstbooleano = false;
   num = "2026";
   idButton = "ntw";
@@ -22,7 +24,7 @@ export class Home {
     this.tstbooleano = valor;
   }
 
-
+  submitForm() {this.enviarFormulariosService.enviaInfoBackend("Informações do formulário enviadas com sucesso!");}
 
   submit() {
     console.log(" Teste realizado com sucesso! ");

@@ -214,7 +214,13 @@
     @for (item of listitensid; track item.id) {
         <p>Item ID: {{ item.id }} - Item Nome: {{ item.nome }}</p>
     }
+    <hr>  <br>
 
+    <p> teste de envio de informações para o backend via injeção de dependência Service Angular </p>
+      <div class="container-texto">
+        <button (click)="submitForm()";>Enviar Formulário Backend</button>
+        <p> Retorno via Console </p>
+      </div>
     </div>
 
     
